@@ -63,7 +63,7 @@ export function ProjectsGrid({ projects }: ProjectsGridProps) {
                   <Link href={project.githubUrl} className="flex-1">
                     <Button variant="secondary" size="sm" className="w-full">
                       <Github className="w-4 h-4 mr-2" />
-                      Code4 mr-2
+                      prstyaDev
                     </Button>
                   </Link>
                 )}
