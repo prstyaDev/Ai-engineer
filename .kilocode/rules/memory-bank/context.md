@@ -13,6 +13,8 @@ A personal portfolio website for an AI engineer with contact form backed by Mong
 - [x] Added detailed error handling in contact API
 - [x] Added postinstall hook for Prisma generation
 - [x] Fixed ESLint errors (escaped apostrophes)
+- [x] Fixed contact route syntax error (missing closing brace)
+- [x] Renamed "Code4" to "prstyaDev" in projects button
 
 ## Current Structure
 
@@ -33,3 +35,4 @@ Contact form functionality and deployment fixes.
 |------|---------|
 | Initial | Template created with base setup |
 | 2026-03-09 | Added contact form with MongoDB, fixed Prisma schema, fixed ESLint errors |
+| 2026-03-09 | Fixed contact route syntax error, renamed Code4 to prstyaDev |
