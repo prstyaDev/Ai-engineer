@@ -10,7 +10,7 @@ datasource db {
 }
 
 model ContactMessage {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  id        String   @id @default(auto()) @map("_id")
   name      String
   email     String
   message   String
