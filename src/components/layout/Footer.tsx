@@ -24,7 +24,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <span className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                AI Engineer
+                prstyaDev
               </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
@@ -72,7 +72,7 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} AI Engineer Portfolio. All rights reserved.
+            © {new Date().getFullYear()} prstyaDev. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
             Built with Next.js, Tailwind CSS & ❤️

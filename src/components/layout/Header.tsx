@@ -35,7 +35,7 @@ export function Header() {
               <Code2 className="w-6 h-6 text-primary" />
             </div>
             <span className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              AI Engineer
+              prstyaDev
             </span>
           </Link>
 
