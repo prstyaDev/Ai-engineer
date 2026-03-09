@@ -46,4 +46,5 @@ export async function POST(request: Request) {
       { error: "Failed to save message", details: errorMessage },
       { status: 500 }
     );
+  }
 }
