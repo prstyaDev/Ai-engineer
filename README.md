@@ -31,8 +31,9 @@ Portfolio personal untuk AI Engineer & Fullstack Developer yang dibangun dengan 
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone
+https://github.com/prstyaDev/AI-Engineer-Portfolio.git
+cd AI-Engineer-Portfolio
 
 # Install dependencies (Bun)
 bun install
