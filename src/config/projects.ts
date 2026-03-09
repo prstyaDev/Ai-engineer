@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "Intelligent chatbot using Retrieval-Augmented Generation with custom knowledge base. Features semantic search, context-aware responses, and source citation.",
     tags: ["Next.js", "OpenAI", "LangChain", "Pinecone", "TypeScript"],
     demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/chatbot",
+    githubUrl: "https://github.com/prstyaDev/chatbot",
     featured: true,
   },
   {
@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "RESTful API for generating images using Stable Diffusion. Includes batch processing, custom model training, and webhook notifications.",
     tags: ["Python", "FastAPI", "Stable Diffusion", "Docker", "AWS"],
     demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/image-gen",
+    githubUrl: "https://github.com/prstyaDev/image-gen",
     featured: true,
   },
   {
@@ -28,7 +28,7 @@ export const projects: Project[] = [
       "Real-time sentiment analysis dashboard for social media monitoring. Features live data streaming, custom alerts, and comprehensive analytics.",
     tags: ["React", "TensorFlow.js", "D3.js", "Twitter API"],
     demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/sentiment",
+    githubUrl: "https://github.com/prstyaDev/sentiment",
     featured: true,
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Automated pipeline for fine-tuning large language models on custom datasets. Supports LoRA, QLoRA, and full parameter fine-tuning.",
     tags: ["Python", "PyTorch", "Hugging Face", "MLflow", "Kubernetes"],
     demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/llm-pipeline",
+    githubUrl: "https://github.com/prstyaDev/llm-pipeline",
     featured: false,
   },
   {
@@ -48,7 +48,7 @@ export const projects: Project[] = [
       "Multimodal AI assistant with voice interaction capabilities. Supports speech recognition, natural language understanding, and text-to-speech.",
     tags: ["Next.js", "Whisper", "ElevenLabs", "OpenAI", "WebRTC"],
     demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/voice-ai",
+    githubUrl: "https://github.com/prstyaDev/voice-ai",
     featured: false,
   },
   {
@@ -58,7 +58,7 @@ export const projects: Project[] = [
       "AI-powered document processing system that extracts structured data from PDFs, images, and scanned documents using computer vision.",
     tags: ["Python", "OpenCV", "LangChain", "PostgreSQL", "Redis"],
     demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/doc-intel",
+    githubUrl: "https://github.com/prstyaDev/doc-intel",
     featured: false,
   },
 ];

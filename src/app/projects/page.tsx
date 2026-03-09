@@ -5,7 +5,7 @@ import { ProjectsGrid } from "@/components/sections/ProjectsGrid";
 import { projects } from "@/config/projects";
 
 export const metadata: Metadata = {
-  title: "Projects | AI Engineer Portfolio",
+  title: "Projects | prstyaDev Portfolio",
   description: "Explore my AI and machine learning projects",
 };
 
