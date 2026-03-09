@@ -20,7 +20,7 @@ export default function ProjectsPage() {
             <h1 className="text-4xl font-bold mb-4">Projects</h1>
             <p className="text-muted-foreground text-lg max-w-2xl">
               A collection of AI-powered applications, machine learning projects,
-              and full-stack solutions I've built.
+              and full-stack solutions I&apos;ve built.
             </p>
           </div>
 

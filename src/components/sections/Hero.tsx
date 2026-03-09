@@ -52,7 +52,7 @@ export function Hero() {
           >
             Full-stack developer specializing in Large Language Models, machine learning
             integration, and building intelligent applications that push the boundaries
-            of what's possible.
+            of what&apos;s possible.
           </motion.p>
 
           {/* CTA Buttons */}
