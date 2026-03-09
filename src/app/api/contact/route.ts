@@ -39,9 +39,11 @@ export async function POST(request: Request) {
     );
   } catch (error) {
     console.error("Error saving contact message:", error);
+    
+    // Return more detailed error for debugging
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(
-      { error: "Failed to save message" },
+      { error: "Failed to save message", details: errorMessage },
       { status: 500 }
     );
-  }
 }

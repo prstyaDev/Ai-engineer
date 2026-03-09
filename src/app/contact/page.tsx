@@ -33,8 +33,10 @@ export default function ContactPage() {
         body: JSON.stringify(formData),
       });
 
+      const data = await response.json();
+      
       if (!response.ok) {
-        throw new Error("Failed to send message");
+        throw new Error(data.details || data.error || "Failed to send message");
       }
 
       setIsSuccess(true);
