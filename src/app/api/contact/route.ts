@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
-import { ContactFormData } from "@/types";
+import prisma from "@/lib/db";
 
 export async function POST(request: Request) {
   try {
-    const body: ContactFormData = await request.json();
+    const body = await request.json();
+
+    const { name, email, message } = body;
 
     // Validate the request body
-    if (!body.name || !body.email || !body.message) {
+    if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
@@ -15,25 +17,24 @@ export async function POST(request: Request) {
 
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(body.email)) {
+    if (!emailRegex.test(email)) {
       return NextResponse.json(
         { error: "Invalid email format" },
         { status: 400 }
       );
     }
 
-    // Note: Database integration disabled for demo
-    // In production, integrate with a database or email service
-    const message = {
-      id: "demo-" + Date.now(),
-      name: body.name,
-      email: body.email,
-      message: body.message,
-      createdAt: new Date(),
-    };
+    // Save to MongoDB using Prisma
+    const savedMessage = await prisma.contactMessage.create({
+      data: {
+        name,
+        email,
+        message,
+      },
+    });
 
     return NextResponse.json(
-      { success: true, data: message },
+      { success: true, data: savedMessage },
       { status: 201 }
     );
   } catch (error) {

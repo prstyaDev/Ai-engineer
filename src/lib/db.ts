@@ -1,28 +1,15 @@
-/**
- * Database connection placeholder
- * Currently using in-memory storage for demo purposes
- * To add database support, configure DATABASE_URL and uncomment Prisma integration
- */
+import { PrismaClient } from "@prisma/client";
 
-export interface DbContactMessage {
-  id: string;
-  name: string;
-  email: string;
-  message: string;
-  createdAt: Date;
-}
-
-// Dummy export for type compatibility
-export const db = {
-  contactMessage: {
-    create: async (data: { data: Omit<DbContactMessage, 'id' | 'createdAt'> }) => {
-      return {
-        id: "demo-" + Date.now(),
-        ...data.data,
-        createdAt: new Date(),
-      };
-    },
-  },
+const globalForPrisma = globalThis as unknown as {
+  prisma: PrismaClient | undefined;
 };
 
-export default db;
+export const prisma =
+  globalForPrisma.prisma ??
+  new PrismaClient({
+    log: ["query", "error", "warn"],
+  });
+
+if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+
+export default prisma;
